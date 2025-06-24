@@ -43,7 +43,7 @@ API RESTful com SQLite que simula movimentações bancárias, utilizando Clean A
 ## 🚀 Como Executar o Projeto
 
 ### 1. Clone o repositório
-git clone https://github.com/seuusuario/projeto-tecnico-amcom.git
+git clone https://github.com/dgxcode/Projeto-tecnico-AMcom.git
 cd projeto-amcom
 
 2. Restaure os pacotes -> dotnet restore
