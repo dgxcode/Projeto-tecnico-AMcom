@@ -2,6 +2,8 @@
 
 # Projeto Técnico - AMcom
 
+# Autor: Rodrigo de Sousa Batista - C# .NET CORE Developer
+
 Este repositório contém a implementação das questões técnicas do processo seletivo da AMcom.
 
 ## ✅ Questão 1 — Cadastrar ContaBancaria
