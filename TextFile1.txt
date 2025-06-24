@@ -1,0 +1,40 @@
+# Inicializa repositório (se ainda não tiver)
+git init
+
+# Cria README.md e default.html
+echo "Conteúdo do README" > README.md
+echo "<html>Default</html>" > default.html
+
+# Adiciona e comita os dois
+git add README.md default.html
+git commit -m "Commit 1"
+
+# Remove default.html do git e disco
+git rm default.html
+git commit -m "Commit 2: remove default.html e adiciona style.css"
+
+# Cria style.css e adiciona
+echo "body { background: #fff; }" > style.css
+git add style.css
+git commit --amend --no-edit  # para incluir style.css no commit 2
+
+# Cria e muda para branch testing
+git checkout -b testing
+
+# Cria script.js e adiciona
+echo "console.log('script.js');" > script.js
+git add script.js
+git commit -m "Commit 3: adiciona script.js"
+
+# Volta para master
+git checkout master
+
+# Listar arquivos em cada branch para ver diferenças
+echo "Arquivos na master:"
+ls
+
+echo "Mudar para testing:"
+git checkout testing
+
+echo "Arquivos na testing:"
+ls
