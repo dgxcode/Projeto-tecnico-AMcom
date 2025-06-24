@@ -1,0 +1,43 @@
+git init -> Inicializa um repositório git vazio.
+
+nano README.md -> Cria/edita o arquivo README.md.
+
+nano default.html -> Cria/edita o arquivo default.html.
+
+git add . -> Adiciona todos os arquivos novos/modificados (README.md e default.html) para o stage.
+
+git commit -m "Commit 1" -> Faz o commit desses arquivos (README.md e default.html).
+
+git rm default.html -> Remove o arquivo default.html do stage e do diretório de trabalho (ou seja, default.html some da pasta).
+
+nano style.css -> Cria/edita style.css (arquivo novo na pasta).
+
+git add style.css -> Adiciona style.css ao stage.
+
+git commit -m "Commit 2" -> Commit de style.css.
+
+git checkout -b testing -> Cria e muda para a branch testing.
+
+nano script.js -> Cria/edita script.js (arquivo novo na pasta).
+
+git add *.js -> Adiciona todos arquivos .js (script.js) ao stage.
+
+git commit -m "Commit 3" -> Commit de script.js na branch testing.
+
+git checkout master -> Volta para a branch master.
+
+arquivos na pasta: 
+
+README.md -> existe, foi comitado.
+
+default.html -> foi removido com git rm, não existe mais na pasta.
+
+style.css -> existe, comitado na master.
+
+script.js -> existe, comitado na branch testing, mas não existe na master porque foi criado e comitado apenas na branch testing.
+
+Conclusão: Na branch master, você tem: README.md / style.css e script.js só existe na branch testing.
+
+default.html -> foi removido e não existe mais no diretório.
+
+Resposta correta: style.css, apenas.
